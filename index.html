@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Untitled Games Website</title>
+  <script type="text/javascript" nonce="d827abbfb71a4016ac57735d347" src="//local.adguard.org?ts=1739114223497&amp;type=content-script&amp;dmn=websim.ai&amp;url=https%3A%2F%2Fwebsim.ai%2Fapi%2Fv1%2Fsites%2FEuOUQ1abhxvxyQmvJ%2Fhtml&amp;app=com.brave.Browser&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-wrtc&amp;st-push&amp;st-loc&amp;st-java&amp;st-ref=aHR0cHM6Ly93ZWJzaW0uYWkv&amp;st-dnt"></script>
+<script type="text/javascript" nonce="d827abbfb71a4016ac57735d347" src="//local.adguard.org?ts=1739114223497&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Popup%20Blocker&amp;name=AdGuard%20Extra&amp;type=user-script"></script><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Untitled Games Website</h1>
+    <input type="text" id="search-bar" placeholder="Search for games...">
+  </header>
+
+  <main>
+    <nav>
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="#" data-category="all">All Games</a></li>
+      </ul>
+    </nav>
+
+    <section id="game-list">
+      <!-- Games will be dynamically added here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Untitled Games. All rights reserved.</p>
+  </footer>
+
+  <div id="admin-panel-container">
+    <button id="admin-panel-button">Admin Panel</button>
+    <div id="admin-panel" style="display: none;">
+      <h2>Admin Panel</h2>
+      <label for="admin-password">Password:</label>
+      <input type="password" id="admin-password">
+      <button id="admin-login">Login</button>
+
+      <div id="add-game-form" style="display: none;">
+        <h3>Add New Game</h3>
+        <label for="game-title">Title:</label>
+        <input type="text" id="game-title"><br><br>
+        <label for="game-category">Category:</label>
+        <select id="game-category">
+          <option value="adventure">Adventure</option>
+          <option value="sports">Sports</option>
+          <option value="puzzle">Puzzle</option>
+          <option value="arcade">Arcade</option>
+        </select><br><br>
+        <label for="game-image-url">Image URL:</label>
+        <input type="text" id="game-image-url"><br><br>
+        <label for="game-url">Game URL:</label>
+        <input type="text" id="game-url"><br><br>
+        <button id="add-game">Add Game</button>
+      </div>
+
+      <div id="create-category-container" style="display: none;">
+        <h3>Create New Category</h3>
+        <label for="new-category-name">Category Name:</label>
+        <input type="text" id="new-category-name">
+        <button id="create-category-button">Create Category</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="style-switcher">
+    <button id="style-button">Styles</button>
+    <div id="style-options" style="display: none;">
+      <button data-theme="default">Default</button>
+      <button data-theme="dark">Dark</button>
+      <button data-theme="amber">Amber</button>
+      <button data-theme="green">Green</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
